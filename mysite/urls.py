@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from myapp.views import inicio, mensajito, login, panel_admistrador_anuncios, panel_cargar_anuncio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", inicio),
+    path("mensajito", mensajito),
+    path("login/", login),
+    path("configuracion", panel_admistrador_anuncios),
+    path("configuracion/crear_anuncio", panel_cargar_anuncio),
 ]

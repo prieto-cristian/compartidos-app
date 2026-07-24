@@ -1,1 +1,4 @@
 .idea/
+# Carpetas de caché de Python
+__pycache__/
+*.pyc
